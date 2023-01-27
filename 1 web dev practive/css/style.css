@@ -51,8 +51,9 @@ ul{
     top:0;
     padding:30px;
     height: 100%;
-    display: flex;
+    border-right: 1px solid black;
     justify-content: center;
+    display:flex;
     align-items: center;
     z-index: 10;
 }
@@ -92,8 +93,68 @@ ul{
     position: absolute;
     width: 20px;
     height: 20px;
-    border-bottom: 5px solid red; 
-    border-left: 5px solid red; 
-    bottom: 0;
-    left: 0; 
+    border-top: 5px solid var(--skin-color);
+    border-right: 5px solid var(--skin-color);
+    top: 0;
+    right: 0; 
+}
+.aside .nav-toggler
+{
+    height: 40px;
+    width:45px;
+    border: 1px solid black;
+    cursor:pointer;
+    position: fixed;
+    left: 300px;
+    top: 20px;
+    border-radius: 5px;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aise .nav-toggler span
+{
+    height: 2px;
+    width:18px;
+    background: var(--skin-color);
+    display: inline-block;
+    position: relative;
+}
+.aside .nav-toggler span::before
+{
+    content: '';
+    height: 2px;
+    width: 18px;
+    background: var(--skin-color);
+    position: absolute;
+    top: -6px;
+    left: 0;
+}
+.aside.nav
+{
+    margin-top: 50px;
+}
+.aside.nav li
+{
+    margin-bottom: 20px;
+    display: block;
+}
+.aside.nav li a
+{
+    font-size:16px;
+    font-weight: 600;
+    display: block;
+    border-bottom: 1px solid  black;
+    color: var black;
+    padding: 5px 15px;
+}
+.aside .nav li a.active
+{
+    color:var (--skin-color);
+
+}
+.aside .nav li a i
+{
+    margin-right: 15px;
 }
