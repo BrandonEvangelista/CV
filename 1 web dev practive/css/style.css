@@ -109,7 +109,7 @@ ul{
     top: 20px;
     border-radius: 5px;
     background: black;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
 }
@@ -129,6 +129,16 @@ ul{
     background: var(--skin-color);
     position: absolute;
     top: -6px;
+    left: 0;
+}
+.aside .nav-toggler span::after
+{
+    content: '';
+    height: 2px;
+    width: 18px;
+    background: var(--skin-color);
+    position: absolute;
+    top: 6px;
     left: 0;
 }
 .aside.nav
@@ -157,4 +167,10 @@ ul{
 .aside .nav li a i
 {
     margin-right: 15px;
+}
+
+/* home */
+.home .home-img img
+{
+    height: 400px;
 }
